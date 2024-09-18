@@ -94,7 +94,6 @@ print('Test Stat = %.4f, p-value = %.4f' % (test_stat, pvalue))
 # If p < 0.05, reject H0.
 # If p > 0.05, fail to reject H0.
 
-
 test_stat, pvalue = ttest_ind(df.loc[df["group"] == "control", "Purchase"],
                               df.loc[df["group"] == "test", "Purchase"],
                               equal_var=True)
